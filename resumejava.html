@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jane Rose Ferdinant</h1>
+        <p>Mobile: +971508174235 | Email: janeferdinant@gmail.com | Abu Dhabi, United Arab Emirates</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/janerosenf">janerosenf</a> | GitHub: <a href="https://github.com/janeferdinant">janeferdinant</a></p>
+        <h2>Professional Summary</h2>
+        <p>Dynamic and results-driven Data Scientist with expertise in Machine Learning and Business Intelligence. 
+        Excels in leveraging data analysis and visualization techniques to drive strategic decision-making. 
+        Seeking to contribute skills and experience to Organization in delivering innovative data-driven solutions.</p>
+        <button id="Experience ">Show Experience</button>
+        <div id="experience" style="display: none;">
+            <h2>Experience</h2>
+            <p>Intern Consultant, Technovalley Software India Private Limited – Ernakulam, Kerala, IN (March 2021 – December 2021)</p>
+            <ul>
+                <li>Developed innovative anomaly detection algorithms resulting in a 20% reduction in false positives and improved system reliability.</li>
+                <li>Spearheaded the implementation of Transfer Learning in computer vision projects, optimizing model performance and reducing training time by 30%.</li>
+                <li>Led a cross-functional team in deploying a recommendation system for an e-commerce platform, resulting in a 15% increase in customer engagement and a 10% boost in sales revenue.</li>
+            </ul>
+        </div>
+        <!-- Add other sections similarly -->
+    </div>
+
+    <script>
+        // Add your JavaScript code here
+        document.getElementById("showExperience").addEventListener("click", function() {
+            var experience = document.getElementById("experience");
+            if (experience.style.display === "none") {
+                experience.style.display = "block";
+            } else {
+                experience.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
